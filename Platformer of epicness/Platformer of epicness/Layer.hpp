@@ -1,5 +1,6 @@
 #pragma once
 #include <SFML\Graphics.hpp>
+#include "Entity.hpp"
 class Layer
 {
 public:
@@ -14,6 +15,6 @@ protected:
 	sf::Rect<float> representation;
 	void Add(Entity* ER);
 	void Remove(Entity* ER);
-	void Update(sf::time gameTime);
+	void Update(sf::Time gameTime);
 };
 

@@ -3,6 +3,7 @@
 
 EntityRepresentation::EntityRepresentation()
 {
+	
 }
 
 

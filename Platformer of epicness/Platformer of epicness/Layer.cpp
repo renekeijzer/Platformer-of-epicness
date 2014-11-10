@@ -16,7 +16,7 @@ void Layer::Add(Entity * et){
 	}
 }
 
-void Layer::Remove(Enity* et){
+void Layer::Remove(Entity* et){
 	//Some remove code here
 }
 
