@@ -69,11 +69,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DynamicLayer.cpp" />
+    <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="EntityRepresentation.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Layer.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Screen.cpp" />
+    <ClCompile Include="ScreenManager.cpp" />
+    <ClCompile Include="StaticLayer.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DynamicLayer.hpp" />
+    <ClInclude Include="Entity.hpp" />
+    <ClInclude Include="EntityRepresentation.hpp" />
     <ClInclude Include="Game.hpp" />
+    <ClInclude Include="Layer.hpp" />
+    <ClInclude Include="Screen.hpp" />
+    <ClInclude Include="ScreenManager.hpp" />
+    <ClInclude Include="StaticLayer.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

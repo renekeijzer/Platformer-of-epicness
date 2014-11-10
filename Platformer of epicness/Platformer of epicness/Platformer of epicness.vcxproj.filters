@@ -13,6 +13,45 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\managers">
+      <UniqueIdentifier>{1d3cd97e-43d1-4ba9-8257-9c93a927966e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\managers">
+      <UniqueIdentifier>{35a92fb9-28c1-4ff5-8f36-df275005e113}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\screens">
+      <UniqueIdentifier>{5c89c436-ac20-4898-999f-469fc9126e27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\screens">
+      <UniqueIdentifier>{b4a34a69-41f7-4cf1-bcff-bbfb2de5cb00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entity">
+      <UniqueIdentifier>{b7ee8d8f-a7ef-48d7-a9ba-035acf4b80cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entity\Abstract">
+      <UniqueIdentifier>{5f8988f5-5816-43dc-8342-1298658d7468}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\screens\Abstract">
+      <UniqueIdentifier>{07ea85a5-8207-43e8-841c-88c68a2b2355}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Representation">
+      <UniqueIdentifier>{85343db4-e5c7-4194-82e5-6c9dd160fadc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Representation\Abstract">
+      <UniqueIdentifier>{74d09525-af96-4ceb-bba7-28c7c7b0027f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entity">
+      <UniqueIdentifier>{22754868-7d3d-4707-abac-ecaf45dceaba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entity\Abstract">
+      <UniqueIdentifier>{dd9bc6bc-1d4d-4526-9076-400b48fc7f9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Representation">
+      <UniqueIdentifier>{de0da442-09f1-4a3c-af73-6064817f7572}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Representation\Abstract">
+      <UniqueIdentifier>{88ef4bff-a348-4854-9b08-5f875d71fab5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -21,10 +60,52 @@
     <ClCompile Include="Game.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ScreenManager.cpp">
+      <Filter>Source Files\managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Screen.cpp">
+      <Filter>Source Files\screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Layer.cpp">
+      <Filter>Source Files\Representation\Abstract</Filter>
+    </ClCompile>
+    <ClCompile Include="DynamicLayer.cpp">
+      <Filter>Source Files\Representation</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticLayer.cpp">
+      <Filter>Source Files\Representation</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Source Files\Entity\Abstract</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityRepresentation.cpp">
+      <Filter>Source Files\Representation\Abstract</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.hpp">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenManager.hpp">
+      <Filter>Header Files\managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Screen.hpp">
+      <Filter>Header Files\screens\Abstract</Filter>
+    </ClInclude>
+    <ClInclude Include="Layer.hpp">
+      <Filter>Header Files\Representation\Abstract</Filter>
+    </ClInclude>
+    <ClInclude Include="DynamicLayer.hpp">
+      <Filter>Header Files\Representation</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticLayer.hpp">
+      <Filter>Header Files\Representation</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.hpp">
+      <Filter>Header Files\Entity\Abstract</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityRepresentation.hpp">
+      <Filter>Header Files\Representation\Abstract</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
