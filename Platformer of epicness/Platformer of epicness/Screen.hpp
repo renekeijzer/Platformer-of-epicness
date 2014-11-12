@@ -1,6 +1,6 @@
 #pragma once
 #include <SFML\Graphics.hpp>
-#include "GameComponent.hpp"
+#include "Layer.hpp"
 #include <list>
 
 class Screen{
@@ -18,14 +18,14 @@ public:
 
 	//! \brief Adds a new GameComponent
 	//! \param gc the component to add
-	virtual void add(GameComponent *gc);
+	void add(Layer *gc);
 
 	//! \brief Removes an existing GameComponent
 	//! \param gc the component to remove
-	virtual void remove(GameComponent *gc);
+	void remove(Layer *gc);
 
 	//! \brief Update will handle the business logic
-	virtual void update();
+	virtual void update(sf::Time gameTime);
 
 	//! \brief Draw will handle all the draw logic of the component
 	//! \param window the window to draw to
@@ -37,11 +37,9 @@ public:
 	//! \ brief Destructor of Screen
 	~Screen();
 
-private:
+protected:
 	//! \brief attribute to state if the object is active or not
 	bool active;
 	std::string name;
 	sf::View mainView;
 };
-
-#endif

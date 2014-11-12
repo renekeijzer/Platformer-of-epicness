@@ -21,9 +21,16 @@ void Layer::Remove(Entity* et){
 }
 
 void Layer::Update(sf::Time gameTime){
-	for each (Entity* entity in EntityList)
+	if (active)
 	{
-		entity->update(gameTime);
+		for each (Entity* entity in EntityList)
+		{
+			entity->update(gameTime);
+		}
 	}
 
+}
+
+void Layer::setActive(bool set){
+	active = set;
 }

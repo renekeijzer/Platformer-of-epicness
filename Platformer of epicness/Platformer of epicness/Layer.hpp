@@ -11,10 +11,13 @@ public:
 	virtual void Draw(sf::RenderWindow& window) = 0;
 
 protected:
+	bool active;
 	std::vector<Entity *> EntityList;
 	sf::Rect<float> representation;
+	
+	void setActive(bool set);
 	void Add(Entity* ER);
 	void Remove(Entity* ER);
-	void Update(sf::Time gameTime);
+	virtual void Update(sf::Time gameTime);
 };
 

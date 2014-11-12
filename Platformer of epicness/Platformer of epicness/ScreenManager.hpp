@@ -8,11 +8,8 @@
 //#############################################################################
 
 #pragma once
-#include <stddef.h>
-#include "GameComponent.hpp"
 #include <SFML\Graphics.hpp>
 #include "Screen.hpp"
-#include <list>
 
 class ScreenManager{
 public:

@@ -13,4 +13,6 @@ DynamicLayer::~DynamicLayer()
 
 void DynamicLayer::Draw(sf::RenderWindow& window)
 {
+	if (active){
+	}
 }

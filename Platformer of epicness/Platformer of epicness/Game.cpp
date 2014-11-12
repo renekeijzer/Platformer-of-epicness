@@ -13,6 +13,9 @@ Game::~Game()
 
 void Game::run(){
 	sf::RenderWindow window(sf::VideoMode(800, 600), "Platformer of epicness");
+	GameScreen* screen = new GameScreen("GameScreen");
+	ScreenManager::getInstance()->add(screen);
+
 	window.setFramerateLimit(60);
 	while (window.isOpen()){
 		sf::Event event;
