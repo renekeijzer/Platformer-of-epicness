@@ -10,12 +10,12 @@ public:
 	virtual void Draw(sf::RenderWindow& window);
 	virtual void Update(sf::Time gameTime);
 
-	void setRepresenta
+	void setRepresentation(EntityRepresentation * er);
 	void setCollisionRect(sf::Rect<float> cr);
 	sf::Rect<float> getCollisionRect();
 protected:
 
-	EntityRepresentation representation;
+	EntityRepresentation * representation;
 	sf::Rect<float> collisionRect;
 };
 

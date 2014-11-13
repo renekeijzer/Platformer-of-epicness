@@ -25,7 +25,7 @@ void Layer::Update(sf::Time gameTime){
 	{
 		for each (Entity* entity in EntityList)
 		{
-			entity->update(gameTime);
+			entity->Update(gameTime);
 		}
 	}
 

@@ -5,7 +5,7 @@ PlayerEntity::PlayerEntity()
 {
 }
 
-PlayerEntity::PlayerEntity(sf::Rect<float> cr) : collisionRect(cr){
+PlayerEntity::PlayerEntity(sf::Rect<float> cr) : MovableEntity(cr){
 
 }
 

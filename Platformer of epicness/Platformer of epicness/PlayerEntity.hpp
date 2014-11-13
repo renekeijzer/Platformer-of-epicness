@@ -4,7 +4,7 @@ class PlayerEntity : MovableEntity
 {
 public:
 	PlayerEntity();
-	PlayerEntity(sf::Rect < float> cr);
+	PlayerEntity(sf::Rect <float> cr);
 	~PlayerEntity();
 };
 

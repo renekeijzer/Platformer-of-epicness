@@ -12,8 +12,13 @@ sf::Rect<float> Entity::getCollisionRect(){
 	return collisionRect;
 }
 
+void Entity::setRepresentation(EntityRepresentation * er){
+	representation = er;
+
+}
+
 void Entity::Draw(sf::RenderWindow & window){
-	representation.Draw(window);
+	representation->Draw(window);
 }
 
 Entity::~Entity()

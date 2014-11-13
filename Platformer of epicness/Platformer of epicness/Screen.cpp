@@ -16,11 +16,11 @@ std::string Screen::getName() {
 	return name;
 }
 
-void Screen::add(GameComponent *gc){}
+void Screen::add(Layer *gc){}
 
-void Screen::remove(GameComponent *gc){}
+void Screen::remove(Layer *gc){}
 
-void Screen::update(){}
+void Screen::update(sf::Time gameTime){}
 
 void Screen::draw(sf::RenderWindow & window){}
 

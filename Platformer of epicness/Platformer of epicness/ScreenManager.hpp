@@ -35,7 +35,7 @@ public:
 
 	//! \brief Update method will be used on all the game components, 
 	//! \brief if bool remove is true also removes objects and pointers
-	void update();
+	void update(sf::Time gameTime);
 
 	//! \brief Draw method will be used to draw every gamecomponent in the component list
 	//! \param window the window to draw to

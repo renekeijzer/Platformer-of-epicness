@@ -6,5 +6,6 @@ class PlayerRepresentation :
 public:
 	PlayerRepresentation();
 	~PlayerRepresentation();
+	void Draw(sf::RenderWindow & window) override;
 };
 

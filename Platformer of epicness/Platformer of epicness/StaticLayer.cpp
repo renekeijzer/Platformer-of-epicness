@@ -16,7 +16,7 @@ void StaticLayer::Draw(sf::RenderWindow& window)
 	if (active){
 		if (EntityList.size() > 0){
 
-			int layerWidth = representation.width / 32;
+			int layerWidth = (int)representation.width / 32;
 			int windowy = (int)(window.getView().getCenter().y - (window.getView().getSize().y / 2));
 			int windowx = (int)(window.getView().getCenter().x - (window.getView().getSize().x / 2));
 
@@ -25,7 +25,7 @@ void StaticLayer::Draw(sf::RenderWindow& window)
 					int pos = y*layerWidth + x;
 
 					if (pos >= 0 && (unsigned)pos < EntityList.size()){
-						EntityList.at(pos)->draw(window);
+						EntityList.at(pos)->Draw(window);
 					}
 				}
 			}

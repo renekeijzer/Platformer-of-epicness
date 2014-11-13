@@ -11,7 +11,6 @@ public:
 	void setSize(int x, int y);
 	void setSize(sf::Vector2f size);
 	void setTexture(sf::Texture * text);
-
 	virtual void Draw(sf::RenderWindow & window);
 protected:
 	sf::RectangleShape representation;

@@ -206,9 +206,6 @@
     <ClInclude Include="MovableEntity.hpp">
       <Filter>Header Files\Entity\Abstract</Filter>
     </ClInclude>
-    <ClInclude Include="GameScreen.hpp">
-      <Filter>Source Files\Entity\Abstract</Filter>
-    </ClInclude>
     <ClInclude Include="TextureManager.hpp">
       <Filter>Header Files\managers</Filter>
     </ClInclude>
@@ -223,6 +220,9 @@
     </ClInclude>
     <ClInclude Include="Animator.hpp">
       <Filter>Header Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScreen.hpp">
+      <Filter>Header Files\screens</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

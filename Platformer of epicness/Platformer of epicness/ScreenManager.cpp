@@ -21,10 +21,10 @@ void ScreenManager::clear(){
 	screens.clear();
 }
 
-void ScreenManager::update(){
+void ScreenManager::update(sf::Time gameTime){
 	for (Screen* screen : screens){
 		if (screen->isActive()) {
-			screen->update();
+			screen->update(gameTime);
 		}
 	}
 }
