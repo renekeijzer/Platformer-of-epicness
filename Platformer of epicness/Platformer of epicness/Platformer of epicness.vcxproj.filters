@@ -34,12 +34,6 @@
     <Filter Include="Header Files\screens\Abstract">
       <UniqueIdentifier>{07ea85a5-8207-43e8-841c-88c68a2b2355}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Representation">
-      <UniqueIdentifier>{85343db4-e5c7-4194-82e5-6c9dd160fadc}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Representation\Abstract">
-      <UniqueIdentifier>{74d09525-af96-4ceb-bba7-28c7c7b0027f}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Entity">
       <UniqueIdentifier>{22754868-7d3d-4707-abac-ecaf45dceaba}</UniqueIdentifier>
     </Filter>
@@ -52,6 +46,51 @@
     <Filter Include="Source Files\Representation\Abstract">
       <UniqueIdentifier>{88ef4bff-a348-4854-9b08-5f875d71fab5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\screens\Abstract">
+      <UniqueIdentifier>{cf498637-2d41-401a-bbb1-c0352424a021}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Representation\EntityRepresentation">
+      <UniqueIdentifier>{a13a6a17-c2f1-46d8-a8eb-5f059c1ad07e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Representation\layering">
+      <UniqueIdentifier>{9aebc3ea-4941-4666-91a5-77c69523e3e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Representation">
+      <UniqueIdentifier>{85343db4-e5c7-4194-82e5-6c9dd160fadc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Representation\Abstract">
+      <UniqueIdentifier>{74d09525-af96-4ceb-bba7-28c7c7b0027f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Representation\Layering">
+      <UniqueIdentifier>{80e41120-839c-4774-ba0b-9dab849e69ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Representation\EntityRepresentation">
+      <UniqueIdentifier>{d18347a0-241a-431a-a0c6-35ef41e2c2f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Controllers">
+      <UniqueIdentifier>{e1553c2d-bbfd-4026-80b1-3931f14f0700}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Controllers">
+      <UniqueIdentifier>{9fd193ee-7af4-4f1b-8907-5191334bd9f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Controllers\Abstract">
+      <UniqueIdentifier>{eee1f41b-6d46-48da-a271-8dc71d89e771}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Controllers\Abstract">
+      <UniqueIdentifier>{2dcbabee-4139-470e-b7c6-6d8c869052b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Loaders">
+      <UniqueIdentifier>{820ce0ce-5faa-4e5a-b876-d49c917dd747}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Loaders">
+      <UniqueIdentifier>{dd4b38e1-e25b-466f-9824-fc6d7a30ecae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Util">
+      <UniqueIdentifier>{ff7bb42c-c8b4-464d-84f1-d514e7507ea9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Util">
+      <UniqueIdentifier>{ad2d7f4e-50fa-4e97-b233-e46f375c8de5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -63,23 +102,62 @@
     <ClCompile Include="ScreenManager.cpp">
       <Filter>Source Files\managers</Filter>
     </ClCompile>
-    <ClCompile Include="Screen.cpp">
-      <Filter>Source Files\screens</Filter>
-    </ClCompile>
     <ClCompile Include="Layer.cpp">
       <Filter>Source Files\Representation\Abstract</Filter>
-    </ClCompile>
-    <ClCompile Include="DynamicLayer.cpp">
-      <Filter>Source Files\Representation</Filter>
-    </ClCompile>
-    <ClCompile Include="StaticLayer.cpp">
-      <Filter>Source Files\Representation</Filter>
     </ClCompile>
     <ClCompile Include="Entity.cpp">
       <Filter>Source Files\Entity\Abstract</Filter>
     </ClCompile>
     <ClCompile Include="EntityRepresentation.cpp">
       <Filter>Source Files\Representation\Abstract</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScreen.cpp">
+      <Filter>Source Files\screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Screen.cpp">
+      <Filter>Source Files\screens\Abstract</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerEntity.cpp">
+      <Filter>Source Files\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerRepresentation.cpp">
+      <Filter>Source Files\Representation\EntityRepresentation</Filter>
+    </ClCompile>
+    <ClCompile Include="UIlayer.cpp">
+      <Filter>Source Files\Representation\layering</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticLayer.cpp">
+      <Filter>Source Files\Representation\layering</Filter>
+    </ClCompile>
+    <ClCompile Include="DynamicLayer.cpp">
+      <Filter>Source Files\Representation\layering</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller.cpp">
+      <Filter>Source Files\Controllers\Abstract</Filter>
+    </ClCompile>
+    <ClCompile Include="playerController.cpp">
+      <Filter>Source Files\Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="MovableEntity.cpp">
+      <Filter>Source Files\Entity\Abstract</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundManager.cpp">
+      <Filter>Source Files\managers</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureManager.cpp">
+      <Filter>Source Files\managers</Filter>
+    </ClCompile>
+    <ClCompile Include="MapLoader.cpp">
+      <Filter>Source Files\Loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceLoader.cpp">
+      <Filter>Source Files\Loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Animator.cpp">
+      <Filter>Source Files\Util</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -95,17 +173,56 @@
     <ClInclude Include="Layer.hpp">
       <Filter>Header Files\Representation\Abstract</Filter>
     </ClInclude>
-    <ClInclude Include="DynamicLayer.hpp">
-      <Filter>Header Files\Representation</Filter>
-    </ClInclude>
-    <ClInclude Include="StaticLayer.hpp">
-      <Filter>Header Files\Representation</Filter>
-    </ClInclude>
     <ClInclude Include="Entity.hpp">
       <Filter>Header Files\Entity\Abstract</Filter>
     </ClInclude>
     <ClInclude Include="EntityRepresentation.hpp">
       <Filter>Header Files\Representation\Abstract</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerEntity.hpp">
+      <Filter>Header Files\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerRepresentation.hpp">
+      <Filter>Header Files\Representation\EntityRepresentation</Filter>
+    </ClInclude>
+    <ClInclude Include="UIlayer.hpp">
+      <Filter>Header Files\Representation\Layering</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticLayer.hpp">
+      <Filter>Header Files\Representation\Layering</Filter>
+    </ClInclude>
+    <ClInclude Include="DynamicLayer.hpp">
+      <Filter>Header Files\Representation\Layering</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller.hpp">
+      <Filter>Header Files\Controllers\Abstract</Filter>
+    </ClInclude>
+    <ClInclude Include="playerController.hpp">
+      <Filter>Header Files\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="MovableEntity.hpp">
+      <Filter>Header Files\Entity\Abstract</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScreen.hpp">
+      <Filter>Source Files\Entity\Abstract</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureManager.hpp">
+      <Filter>Header Files\managers</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundManager.hpp">
+      <Filter>Header Files\managers</Filter>
+    </ClInclude>
+    <ClInclude Include="MapLoader.hpp">
+      <Filter>Header Files\Loaders</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceLoader.hpp">
+      <Filter>Header Files\Loaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Animator.hpp">
+      <Filter>Header Files\Util</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

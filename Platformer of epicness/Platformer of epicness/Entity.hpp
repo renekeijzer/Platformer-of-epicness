@@ -5,10 +5,17 @@ class Entity
 {
 public:
 	Entity();
+	Entity(sf::Rect<float> cr);
 	~Entity();
 	virtual void Draw(sf::RenderWindow& window);
-	virtual void Update(sf::Time gameTime) = 0;
+	virtual void Update(sf::Time gameTime);
+
+	void setRepresenta
+	void setCollisionRect(sf::Rect<float> cr);
+	sf::Rect<float> getCollisionRect();
 protected:
+
 	EntityRepresentation representation;
+	sf::Rect<float> collisionRect;
 };
 

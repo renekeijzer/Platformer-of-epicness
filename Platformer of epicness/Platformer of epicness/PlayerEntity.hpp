@@ -1,9 +1,10 @@
 #pragma once
-#include "Entity.hpp"
-class PlayerEntity : Entity
+#include "MovableEntity.hpp"
+class PlayerEntity : MovableEntity
 {
 public:
 	PlayerEntity();
+	PlayerEntity(sf::Rect < float> cr);
 	~PlayerEntity();
 };
 

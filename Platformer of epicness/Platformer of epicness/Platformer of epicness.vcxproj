@@ -69,25 +69,51 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Animator.cpp" />
+    <ClCompile Include="Controller.cpp" />
     <ClCompile Include="DynamicLayer.cpp" />
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="EntityRepresentation.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameScreen.cpp" />
     <ClCompile Include="Layer.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MapLoader.cpp" />
+    <ClCompile Include="MovableEntity.cpp" />
+    <ClCompile Include="playerController.cpp" />
+    <ClCompile Include="PlayerEntity.cpp" />
+    <ClCompile Include="PlayerRepresentation.cpp" />
+    <ClCompile Include="ResourceLoader.cpp" />
+    <ClCompile Include="Scene.cpp" />
     <ClCompile Include="Screen.cpp" />
     <ClCompile Include="ScreenManager.cpp" />
+    <ClCompile Include="SoundManager.cpp" />
     <ClCompile Include="StaticLayer.cpp" />
+    <ClCompile Include="TextureManager.cpp" />
+    <ClCompile Include="UIlayer.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Animator.hpp" />
+    <ClInclude Include="Controller.hpp" />
     <ClInclude Include="DynamicLayer.hpp" />
     <ClInclude Include="Entity.hpp" />
     <ClInclude Include="EntityRepresentation.hpp" />
     <ClInclude Include="Game.hpp" />
+    <ClInclude Include="GameScreen.hpp" />
     <ClInclude Include="Layer.hpp" />
+    <ClInclude Include="MapLoader.hpp" />
+    <ClInclude Include="MovableEntity.hpp" />
+    <ClInclude Include="playerController.hpp" />
+    <ClInclude Include="PlayerEntity.hpp" />
+    <ClInclude Include="PlayerRepresentation.hpp" />
+    <ClInclude Include="ResourceLoader.hpp" />
+    <ClInclude Include="Scene.hpp" />
     <ClInclude Include="Screen.hpp" />
     <ClInclude Include="ScreenManager.hpp" />
+    <ClInclude Include="SoundManager.hpp" />
     <ClInclude Include="StaticLayer.hpp" />
+    <ClInclude Include="TextureManager.hpp" />
+    <ClInclude Include="UIlayer.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

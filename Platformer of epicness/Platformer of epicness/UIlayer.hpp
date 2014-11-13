@@ -7,6 +7,12 @@ public:
 	UIlayer();
 
 	void Draw(sf::RenderWindow & window) override;
+	void add(sf::Drawable * draw);
+	void remove(sf::Drawable* draw);
+
+	void Update(sf::Time gameTime);
 	~UIlayer();
+private:
+	std::vector<sf::Drawable * > drawableList;
 };
 
