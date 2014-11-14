@@ -6,7 +6,7 @@ MovableEntity::MovableEntity()
 	entityController.setEntity(this);
 }
 
-MovableEntity::MovableEntity(sf::Rect<float> cr) : collisionRect(cr){
+MovableEntity::MovableEntity(sf::Rect<float> cr) : Entity(cr){
 	entityController.setEntity(this);
 }
 

@@ -6,7 +6,7 @@ class UIlayer :
 public:
 	UIlayer();
 
-	void Draw(sf::RenderWindow & window) override;
+	void Draw(sf::RenderWindow & window);
 	void add(sf::Drawable * draw);
 	void remove(sf::Drawable* draw);
 

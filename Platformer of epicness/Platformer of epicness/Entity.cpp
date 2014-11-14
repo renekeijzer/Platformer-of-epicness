@@ -17,6 +17,7 @@ void Entity::setRepresentation(EntityRepresentation * er){
 
 }
 
+void Entity::Update(sf::Time gameTime){}
 void Entity::Draw(sf::RenderWindow & window){
 	representation->Draw(window);
 }

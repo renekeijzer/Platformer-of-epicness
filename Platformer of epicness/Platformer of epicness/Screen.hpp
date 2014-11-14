@@ -42,4 +42,5 @@ protected:
 	bool active;
 	std::string name;
 	sf::View mainView;
+	std::vector<Layer*> mapping;
 };
