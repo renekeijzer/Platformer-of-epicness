@@ -12,21 +12,16 @@ Game::~Game()
 }
 
 void Game::run(){
-	sf::Clock gameTime;
 	sf::RenderWindow window(sf::VideoMode(800, 600), "Platformer of epicness");
-	Screen *gs = GameScreen::create("gamescreen");
+	Screen * gs = GameScreen::create("gamescreen", true);
 	Layer * layer = new DynamicLayer();
 	
 	PlayerEntity * playerEntity = new PlayerEntity(sf::Rect<float>(32, 32, 32, 32));
-	PlayerRepresentation * playerRep = new PlayerRepresentation();
-	playerEntity->setRepresentation(playerRep);
 	playerController * controller = new playerController(playerEntity);
 
 	layer->Add(playerEntity);
 	gs->add(layer);
-	gs->setActive(true);
-	ScreenManager::getInstance()->add(gs);
-
+	
 
 
 	window.setFramerateLimit(60);

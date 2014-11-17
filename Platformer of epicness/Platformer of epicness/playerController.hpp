@@ -6,8 +6,8 @@ class playerController :
 {
 public:
 	playerController();
-	playerController(Entity * ent);
-
+	playerController(MovableEntity * ent);
+	void poll();
 	~playerController();
 };
 

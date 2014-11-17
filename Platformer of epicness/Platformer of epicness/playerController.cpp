@@ -5,11 +5,13 @@ playerController::playerController()
 {
 }
 
-playerController::playerController(Entity * ent): Controller(ent){
+playerController::playerController(MovableEntity * ent): Controller(ent){
 	
-
 }
 
+void playerController::poll(){
+	std::cout << "test";
+}
 
 playerController::~playerController()
 {

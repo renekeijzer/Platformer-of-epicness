@@ -1,16 +1,18 @@
 #pragma once
-#include "Entity.hpp"
+#include "MovableEntity.hpp"
+class MovableEntity;
 class Controller
 {
 public:
 	Controller();
-	Controller(Entity* ent);
+	Controller(MovableEntity * ent);
 
-	void setEntity(Entity* ent);
+	void setEntity(MovableEntity* ent);
+	MovableEntity* getEntity();
 	virtual void poll();
 	~Controller();
 protected:
-	Entity* controlEntity;
+	MovableEntity* controlEntity = nullptr;
 
 };
 

@@ -15,5 +15,6 @@ public:
 	~Game();
 private:
 	void run();
+	sf::Clock gameTime;
 };
 

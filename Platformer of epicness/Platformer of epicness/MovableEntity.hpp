@@ -1,6 +1,7 @@
 #pragma once
 #include "Entity.hpp"
 #include "Controller.hpp"
+class Controller;
 class MovableEntity :
 	public Entity
 {
@@ -11,8 +12,7 @@ public:
 	virtual void Update(sf::Time gameTime) override;
 	~MovableEntity();
 protected:
-	
-	Controller entityController;
+	Controller * entityController = nullptr;
 	sf::Vector2f Velocity;
 };
 

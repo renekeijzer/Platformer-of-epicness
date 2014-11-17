@@ -5,11 +5,16 @@ GameScreen::GameScreen(std::string name) : Screen(name)
 {
 }
 
-Screen* GameScreen::create(std::string name){
+Screen* GameScreen::create(std::string name, bool active){
 	if (ScreenManager::getInstance()->find(name) != nullptr){
 		return ScreenManager::getInstance()->find(name);
 	}
-	return new GameScreen(name);
+
+	Screen * gs = new GameScreen(name);
+	gs->setActive(active);
+	
+	ScreenManager::getInstance()->add(gs);
+	return gs;
 }
 
 void GameScreen::update(sf::Time gameTime){

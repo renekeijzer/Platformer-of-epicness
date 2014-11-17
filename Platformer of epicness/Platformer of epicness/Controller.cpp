@@ -5,14 +5,17 @@ Controller::Controller()
 {
 }
 
-Controller::Controller(Entity * ent) : controlEntity(ent){}
+Controller::Controller(MovableEntity * ent) : controlEntity(ent){}
 
 void Controller::poll(){
 
 }
+MovableEntity* Controller::getEntity(){
+	return controlEntity;
 
+}
 
-void Controller::setEntity(Entity * ent){
+void Controller::setEntity(MovableEntity * ent){
 	controlEntity = ent;
 }
 

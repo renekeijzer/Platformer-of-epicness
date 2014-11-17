@@ -9,6 +9,11 @@ PlayerRepresentation::PlayerRepresentation()
 }
 
 void PlayerRepresentation::Draw(sf::RenderWindow & window){
+	if (focus){
+		sf::View tmp = window.getView();
+		tmp.setCenter(representation.getPosition().x + representation.getSize().x / 2, representation.getPosition().y + representation.getSize().y / 2);
+		window.setView(tmp);
+	}
 	window.draw(representation); 
 }
 

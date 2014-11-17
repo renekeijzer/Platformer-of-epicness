@@ -11,9 +11,11 @@ public:
 	void setSize(int x, int y);
 	void setSize(sf::Vector2f size);
 	void setTexture(sf::Texture * text);
+	void setFocus(bool f);
 	virtual void Draw(sf::RenderWindow & window);
 protected:
 	sf::RectangleShape representation;
 	Animator animator;
+	bool focus;
 };
 
