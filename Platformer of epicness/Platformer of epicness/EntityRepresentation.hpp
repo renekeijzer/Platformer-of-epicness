@@ -14,7 +14,6 @@ public:
 	virtual void Draw(sf::RenderWindow & window);
 protected:
 	sf::RectangleShape representation;
-	sf::Texture displayText;
 	Animator animator;
 };
 

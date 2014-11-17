@@ -16,7 +16,7 @@ std::string Screen::getName() {
 	return name;
 }
 
-void Screen::add(Layer *gc){}
+void Screen::add(Layer *gc){ mapping.push_back(gc); }
 
 void Screen::remove(Layer *gc){}
 

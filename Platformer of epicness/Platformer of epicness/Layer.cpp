@@ -16,6 +16,8 @@ void Layer::Add(Entity * et){
 	}
 }
 
+bool Layer::isActive(){ return active; }
+
 void Layer::Remove(Entity* et){
 	//Some remove code here
 }

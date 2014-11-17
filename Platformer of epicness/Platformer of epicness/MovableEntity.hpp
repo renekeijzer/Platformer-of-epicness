@@ -7,6 +7,8 @@ class MovableEntity :
 public:
 	MovableEntity();
 	MovableEntity(sf::Rect<float> cr);
+	virtual void Draw(sf::RenderWindow& window) override;
+	virtual void Update(sf::Time gameTime) override;
 	~MovableEntity();
 protected:
 	

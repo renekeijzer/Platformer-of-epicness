@@ -5,7 +5,7 @@ GameScreen::GameScreen(std::string name) : Screen(name)
 {
 }
 
-static Screen* create(std::string name){
+Screen* GameScreen::create(std::string name){
 	if (ScreenManager::getInstance()->find(name) != nullptr){
 		return ScreenManager::getInstance()->find(name);
 	}
@@ -13,10 +13,21 @@ static Screen* create(std::string name){
 }
 
 void GameScreen::update(sf::Time gameTime){
-
+	for (Layer * layer : mapping)
+	{
+		if (layer->isActive()){
+			layer->Update(gameTime);
+		}
+	}
 }
 
 void GameScreen::draw(sf::RenderWindow & window){
+	for (Layer * layer : mapping)
+	{
+		if (layer->isActive()){
+			layer->Draw(window);
+		}
+	}
 }
 
 

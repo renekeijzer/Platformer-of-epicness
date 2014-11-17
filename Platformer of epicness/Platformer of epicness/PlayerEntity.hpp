@@ -1,10 +1,13 @@
 #pragma once
 #include "MovableEntity.hpp"
-class PlayerEntity : MovableEntity
+class PlayerEntity : public MovableEntity
 {
 public:
 	PlayerEntity();
-	PlayerEntity(sf::Rect <float> cr);
+	PlayerEntity(sf::Rect<float> cr);
+	void Draw(sf::RenderWindow& window)override;
+	void Update(sf::Time gameTime) override;
+
 	~PlayerEntity();
 };
 

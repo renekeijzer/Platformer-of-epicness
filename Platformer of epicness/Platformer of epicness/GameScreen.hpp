@@ -7,7 +7,7 @@ class GameScreen : public Screen
 {
 public:
 	GameScreen(std::string name);
-	static GameScreen* create(std::string name);
+	static Screen* create(std::string name);
 	void update(sf::Time gameTime);
 	void draw(sf::RenderWindow & window);
 	~GameScreen();

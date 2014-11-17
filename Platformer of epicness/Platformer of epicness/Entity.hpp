@@ -1,6 +1,7 @@
 #pragma once
 #include <SFML\Graphics.hpp>
 #include "EntityRepresentation.hpp"
+#include <iostream>
 class Entity
 {
 public:

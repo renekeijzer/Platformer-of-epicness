@@ -1,6 +1,7 @@
 #pragma once
 #include <SFML\Graphics.hpp>
 #include "Layer.hpp"
+#include <iostream>
 #include <list>
 
 class Screen{
