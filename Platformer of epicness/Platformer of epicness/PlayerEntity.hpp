@@ -7,8 +7,8 @@ class PlayerEntity : public MovableEntity
 public:
 	PlayerEntity();
 	PlayerEntity(sf::Rect<float> cr);
-	void Draw(sf::RenderWindow& window)override;
-	void Update(sf::Time gameTime) override;
+	void Draw(sf::RenderWindow& window);
+	void Update(sf::Time gameTime);
 
 	~PlayerEntity();
 };
