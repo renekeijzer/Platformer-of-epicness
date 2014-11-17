@@ -10,6 +10,7 @@ public:
 	MovableEntity(sf::Rect<float> cr);
 	virtual void Draw(sf::RenderWindow& window) override;
 	virtual void Update(sf::Time gameTime) override;
+	void setVelocity(float x, float y);
 	~MovableEntity();
 protected:
 	Controller * entityController = nullptr;

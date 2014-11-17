@@ -22,6 +22,9 @@ void EntityRepresentation::setFocus(bool f){
 	focus = f;
 }
 
+
+sf::Vector2f EntityRepresentation::getPosition(){ return representation.getPosition(); }
+
 void EntityRepresentation::Draw(sf::RenderWindow & window){
 	if (focus){
 		sf::View tmp = window.getView();

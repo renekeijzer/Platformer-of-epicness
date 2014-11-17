@@ -12,6 +12,7 @@ public:
 	void setSize(sf::Vector2f size);
 	void setTexture(sf::Texture * text);
 	void setFocus(bool f);
+	sf::Vector2f getPosition();
 	virtual void Draw(sf::RenderWindow & window);
 protected:
 	sf::RectangleShape representation;
