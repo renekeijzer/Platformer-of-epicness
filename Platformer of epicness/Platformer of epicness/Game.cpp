@@ -1,5 +1,5 @@
 #include "Game.hpp"
-
+#include "MapLoader.hpp"
 
 Game::Game()
 {
@@ -18,7 +18,7 @@ void Game::run(){
 	
 	PlayerEntity * playerEntity = new PlayerEntity(sf::Rect<float>(32, 32, 32, 32));
 	playerController * controller = new playerController(playerEntity);
-
+	MapLoader::get()->createMap(gs);
 	layer->Add(playerEntity);
 	gs->add(layer);
 	

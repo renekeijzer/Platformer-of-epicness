@@ -20,7 +20,6 @@ void playerController::poll(){
 	//actualy move the component
 	for (const auto & action : actions){
 		if (sf::Keyboard::isKeyPressed(action.key)){
-			std::cout << action.key;
 			controlEntity->setVelocity(action.x, action.y);
 		}
 	}

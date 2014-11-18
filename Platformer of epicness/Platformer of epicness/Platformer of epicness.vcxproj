@@ -70,6 +70,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Animator.cpp" />
+    <ClCompile Include="ChunkEntity.cpp" />
     <ClCompile Include="Controller.cpp" />
     <ClCompile Include="DynamicLayer.cpp" />
     <ClCompile Include="Entity.cpp" />
@@ -94,6 +95,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animator.hpp" />
+    <ClInclude Include="ChunkEntity.hpp" />
     <ClInclude Include="Controller.hpp" />
     <ClInclude Include="DynamicLayer.hpp" />
     <ClInclude Include="Entity.hpp" />

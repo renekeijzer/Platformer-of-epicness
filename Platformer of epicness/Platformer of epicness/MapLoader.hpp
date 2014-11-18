@@ -28,7 +28,7 @@ public:
 
 	//! \brief Will add all tiles to components list, and will be drawn when game loop is initiated
 	//! \param screen screen on which the objects will be added
-	void createMap(GameScreen* screen);
+	void createMap(Screen* screen);
 
 	//! \brief Resets all values to their defualt values
 	void resetLevelNr();

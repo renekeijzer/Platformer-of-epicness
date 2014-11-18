@@ -7,15 +7,14 @@ public:
 	EntityRepresentation();
 	~EntityRepresentation();
 	
-	void setPosition(sf::Vector2f pos);
-	void setSize(int x, int y);
-	void setSize(sf::Vector2f size);
-	void setTexture(sf::Texture * text);
+	virtual void setPosition(sf::Vector2f pos)		= 0;
+	virtual void setSize(int x, int y)				= 0;
+	virtual void setSize(sf::Vector2f size)			= 0;
+	virtual void setTexture(sf::Texture * text)		= 0;
+	virtual sf::Vector2f getPosition()				= 0;
+	virtual void Draw(sf::RenderWindow & window)	= 0;
 	void setFocus(bool f);
-	sf::Vector2f getPosition();
-	virtual void Draw(sf::RenderWindow & window);
 protected:
-	sf::RectangleShape representation;
 	Animator animator;
 	bool focus;
 };

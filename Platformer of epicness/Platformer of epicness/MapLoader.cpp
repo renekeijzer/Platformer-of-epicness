@@ -11,7 +11,7 @@ MapLoader* MapLoader::get(){
 }
 
 void MapLoader::parseXml(){
-	std::ifstream levelMapping("Resources/Levels.dat");
+	std::ifstream levelMapping("Recources\\Levels.dat");
 	char ch;
 	char buffer[65536];
 	size_t chars_read = 0;
@@ -20,13 +20,13 @@ void MapLoader::parseXml(){
 		buffer[chars_read++] = ch;
 	}
 	buffer[chars_read++] = '\0';
-
 	rapidxml::xml_document<> map;
 	map.parse<0>(buffer);
+	
 	rapidxml::xml_node<> *startMapping = map.first_node("levels")->first_node();
 	try{
 		while (startMapping != 0){
-			int id = atoi(startMapping->first_attribute("id")->value();
+			int id = atoi(startMapping->first_attribute("id")->value());
 			
 			level tmpLevel;
 			tmpLevel.source = startMapping->first_attribute("source")->value();
@@ -46,8 +46,8 @@ void MapLoader::parseXml(){
 	levelMapping.close();
 }
 
-void MapLoader::createMap(GameScreen* screen){
-	try{
+void MapLoader::createMap(Screen* screen){
+	
 		if (!current){ 
 			current = levels[1]; 
 		}
@@ -70,9 +70,9 @@ void MapLoader::createMap(GameScreen* screen){
 		map.parse<0>(buffer);
 		rapidxml::xml_node<> *startMapping = map.first_node("map")->first_node();
 		while (startMapping != 0){
-
+			break;
 		}
-
+		std::cout << buffer;
 }
 
 std::vector<std::string> MapLoader::explode(const std::string& str, const char& ch) {
