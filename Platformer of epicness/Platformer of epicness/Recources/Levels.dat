@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<levels>
+	<level id="1" source="Recources/Levels/cliffs.dat" spritesheet=""/>
+	<level id="2" source="Recources/Levels/firstTrees.dat" spritesheet=""/>
+	<level id="3" source="Recources/Levels/barrenCliffs.dat" spritesheet=""/>
+</levels>

@@ -106,6 +106,10 @@
     <ClInclude Include="playerController.hpp" />
     <ClInclude Include="PlayerEntity.hpp" />
     <ClInclude Include="PlayerRepresentation.hpp" />
+    <ClInclude Include="rapidxml.hpp" />
+    <ClInclude Include="rapidxml_iterators.hpp" />
+    <ClInclude Include="rapidxml_print.hpp" />
+    <ClInclude Include="rapidxml_utils.hpp" />
     <ClInclude Include="ResourceLoader.hpp" />
     <ClInclude Include="Scene.hpp" />
     <ClInclude Include="Screen.hpp" />
