@@ -13,11 +13,12 @@ PlayerEntity::PlayerEntity(sf::Rect<float> cr) : MovableEntity(cr){
 }
 
 void PlayerEntity::Update(sf::Time gameTime){
-	std::cout << Velocity.x;
 	if (entityController){
 		if (entityController->getEntity() != nullptr){
 			entityController->poll();
 			representation->setPosition(representation->getPosition() + Velocity);
+			Velocity.x = 0;
+			Velocity.y = 0;
 		}
 		else
 		{

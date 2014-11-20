@@ -71,6 +71,7 @@
   <ItemGroup>
     <ClCompile Include="Animator.cpp" />
     <ClCompile Include="ChunkEntity.cpp" />
+    <ClCompile Include="ChunkRepresentation.cpp" />
     <ClCompile Include="Controller.cpp" />
     <ClCompile Include="DynamicLayer.cpp" />
     <ClCompile Include="Entity.cpp" />
@@ -92,10 +93,12 @@
     <ClCompile Include="StaticLayer.cpp" />
     <ClCompile Include="TextureManager.cpp" />
     <ClCompile Include="UIlayer.cpp" />
+    <ClCompile Include="VertexPoint.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animator.hpp" />
     <ClInclude Include="ChunkEntity.hpp" />
+    <ClInclude Include="ChunkRepresentation.hpp" />
     <ClInclude Include="Controller.hpp" />
     <ClInclude Include="DynamicLayer.hpp" />
     <ClInclude Include="Entity.hpp" />
@@ -120,6 +123,7 @@
     <ClInclude Include="StaticLayer.hpp" />
     <ClInclude Include="TextureManager.hpp" />
     <ClInclude Include="UIlayer.hpp" />
+    <ClInclude Include="VertexPoint.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
