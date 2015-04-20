@@ -3,6 +3,7 @@
 
 ChunkRepresentation::ChunkRepresentation()
 {
+	drawList.setPrimitiveType(sf::TrianglesFan);
 }
 
 
@@ -10,7 +11,7 @@ ChunkRepresentation::~ChunkRepresentation()
 {
 }
 
-void ChunkRepresentation::updateVertex(){
+void ChunkRepresentation::updateVertex(std::vector<VertexPoint *> pointList){
 	for each (VertexPoint* VP in pointList)
 	{
 		drawList.append(VP->getPoint());
@@ -20,11 +21,6 @@ void ChunkRepresentation::updateVertex(){
 
 void ChunkRepresentation::Draw(sf::RenderWindow & window)
 {
-	if (!update){
 		window.draw(drawList);
-	}
-	else{
-		updateVertex();
-	}
 }
 

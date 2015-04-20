@@ -7,13 +7,10 @@ class ChunkRepresentation :
 public:
 	ChunkRepresentation();
 	~ChunkRepresentation();
-	void addPoint(VertexPoint* point);
-	void setUpdate(bool set){ update = set; }
+
+	void updateVertex(std::vector<VertexPoint *> pointList);
 	void Draw(sf::RenderWindow & window);
 private:
-	std::vector<VertexPoint*> pointList;
 	sf::VertexArray drawList;
-	void updateVertex();
-	bool update; //!<Set this if an vertex update is required
 };
 

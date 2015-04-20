@@ -7,6 +7,8 @@
 #include "PlayerEntity.hpp"
 #include "PlayerRepresentation.hpp"
 #include "playerController.hpp"
+#include "ChunkEntity.hpp"
+#include "ChunkRepresentation.hpp"
 #include "DynamicLayer.hpp"
 class Game
 {

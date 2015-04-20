@@ -1,6 +1,7 @@
 #include "Game.hpp"
 #include "MapLoader.hpp"
 
+
 Game::Game()
 {
 	run();
@@ -18,6 +19,16 @@ void Game::run(){
 	
 	PlayerEntity * playerEntity = new PlayerEntity(sf::Rect<float>(32, 32, 32, 32));
 	playerController * controller = new playerController(playerEntity);
+
+	ChunkEntity * ch = new ChunkEntity();
+	ch->addPoint(100, 100);
+	ch->addPoint(120, 120);
+	ch->addPoint(200, 128);
+	ch->addPoint(180, 200);
+
+	layer->Add(ch);
+
+
 	MapLoader::get()->createMap(gs);
 	layer->Add(playerEntity);
 	gs->add(layer);

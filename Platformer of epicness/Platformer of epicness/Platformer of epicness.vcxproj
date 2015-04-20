@@ -92,6 +92,8 @@
     <ClCompile Include="SoundManager.cpp" />
     <ClCompile Include="StaticLayer.cpp" />
     <ClCompile Include="TextureManager.cpp" />
+    <ClCompile Include="TileEntity.cpp" />
+    <ClCompile Include="TileRepresentation.cpp" />
     <ClCompile Include="UIlayer.cpp" />
     <ClCompile Include="VertexPoint.cpp" />
   </ItemGroup>
@@ -122,6 +124,8 @@
     <ClInclude Include="SoundManager.hpp" />
     <ClInclude Include="StaticLayer.hpp" />
     <ClInclude Include="TextureManager.hpp" />
+    <ClInclude Include="TileEntity.hpp" />
+    <ClInclude Include="TileRepresentation.hpp" />
     <ClInclude Include="UIlayer.hpp" />
     <ClInclude Include="VertexPoint.hpp" />
   </ItemGroup>

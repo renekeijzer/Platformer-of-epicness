@@ -166,7 +166,13 @@
       <Filter>Source Files\Representation\EntityRepresentation</Filter>
     </ClCompile>
     <ClCompile Include="VertexPoint.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="TileEntity.cpp">
+      <Filter>Source Files\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="TileRepresentation.cpp">
+      <Filter>Source Files\Representation\EntityRepresentation</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -252,7 +258,13 @@
       <Filter>Header Files\Representation\EntityRepresentation</Filter>
     </ClInclude>
     <ClInclude Include="VertexPoint.hpp">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="TileEntity.hpp">
+      <Filter>Header Files\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="TileRepresentation.hpp">
+      <Filter>Header Files\Representation\EntityRepresentation</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

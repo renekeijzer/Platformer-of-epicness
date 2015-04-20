@@ -3,6 +3,7 @@
 
 VertexPoint::VertexPoint()
 {
+	point.color = sf::Color::White;
 }
 
 
